@@ -1,28 +1,12 @@
-# 🚀 Aditya Bhardwaj — Portfolio
+# React + Vite
 
-Welcome to my **personal portfolio website** built with ❤️ using **React**, **Tailwind CSS**, and **Framer Motion**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-> ✨ A sleek, responsive, and animated website showcasing my tech stack, projects, and developer journey.
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🧠 Tech Stack
+## Expanding the ESLint configuration
 
-- ⚛️ React — Component-based UI
-- 💨 Tailwind CSS — Utility-first styling
-- 🎞 Framer Motion — Smooth animations
-- 🎨 React Icons — Beautiful iconography
-
----
-
-## 🔥 Features
-
-- 🌈 **Animated sections** that fade, slide, and pop on scroll
-- 🧠 **Responsive design** for all devices
-- 🎯 **Clickable glowing project titles** that link to live demos
-- 💾 **Copy to clipboard** email button 
-- 🧰 **Technologies section** with animated icons bouncing in a wave
-
----
-
-
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
