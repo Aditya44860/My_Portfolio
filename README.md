@@ -20,7 +20,7 @@ Welcome to my **personal portfolio website** built with ❤️ using **React**, 
 - 🌈 **Animated sections** that fade, slide, and pop on scroll
 - 🧠 **Responsive design** for all devices
 - 🎯 **Clickable glowing project titles** that link to live demos
-- 💾 **Copy to clipboard** email button with feedback
+- 💾 **Copy to clipboard** email button 
 - 🧰 **Technologies section** with animated icons bouncing in a wave
 
 ---
