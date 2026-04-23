@@ -57,7 +57,7 @@ const About = () => {
         <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: 80 }}
           transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }} viewport={{ once: true }}
           className="w-full lg:w-1/2">
-          <div className="flex flex-col justify-center h-full gap-8 py-6 max-w-xl">
+          <div className="flex flex-col justify-center h-full gap-8 py-6 px-6 lg:px-0 max-w-xl">
             <p className="font-light tracking-tighter text-neutral-300 leading-relaxed">
               {ABOUT_TEXT}
             </p>

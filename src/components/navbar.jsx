@@ -18,6 +18,7 @@ const Navbar = () => {
   const [hidden, setHidden] = useState(false);
   const [lastY, setLastY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isInitial, setIsInitial] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {
@@ -29,6 +30,11 @@ const Navbar = () => {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, [lastY]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsInitial(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const scrollTo = (e, href) => {
     e.preventDefault();
@@ -49,7 +55,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <motion.div 
-          layoutId="navbar-logo"
+          layoutId={isInitial ? "navbar-logo" : undefined}
           whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           animate={{ filter: "drop-shadow(0 0 8px rgba(255,255,255,0.5))", opacity: 1 }}
           transition={{ layout: { duration: 0.8, ease: "easeInOut" } }}

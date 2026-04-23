@@ -97,7 +97,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen max-h-screen flex flex-col border-b border-neutral-900 pt-20" style={{ overflow: "clip" }}>
+    <div className="relative min-h-svh lg:h-screen flex flex-col border-b border-neutral-900 pt-20 overflow-x-clip">
 
       {/* ── Desktop — strict 50/50 ── */}
       <div className="flex-1 hidden lg:flex">
@@ -187,8 +187,8 @@ const Hero = () => {
       </div>
 
       {/* ── Mobile ── */}
-      <div className="flex-1 flex flex-col lg:hidden">
-        <div className="flex flex-col justify-center px-4 py-10 items-center">
+      <div className="flex-1 flex flex-col gap-10 lg:hidden">
+        <div className="flex flex-col justify-center px-4 py-6 items-center">
           <motion.div variants={fadeInLeft(0)} initial="hidden" animate="visible"
             className="mb-6 flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-neutral-800 bg-neutral-900/70 text-xs text-neutral-400 w-fit select-none">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -219,7 +219,7 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="flex justify-center pb-10">
+        <div className="flex justify-center pb-8">
           <div className="relative inline-block">
             <motion.img animate={{ y: [0, -8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               src={ProfilePic} alt="Aditya Bhardwaj"
