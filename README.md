@@ -26,25 +26,6 @@ A premium, cinematic developer portfolio built with **React**, **Tailwind CSS**,
 
 ---
 
-## 📦 Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Aditya44860/My_Portfolio.git
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
-
----
-
 ## 📬 Contact
 
 Feel free to reach out for collaborations or just a friendly hello!
